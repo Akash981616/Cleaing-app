@@ -1,0 +1,27 @@
+<svg width="744" height="982" viewBox="0 0 744 982" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_8_2600" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="744" height="982">
+<rect width="744" height="982" rx="16" fill="#F7F9FE"/>
+</mask>
+<g mask="url(#mask0_8_2600)">
+<mask id="mask1_8_2600" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-494" y="0" width="1936" height="982">
+<path d="M-493.943 0H1441V982H-493.943V0Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask1_8_2600)">
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -467.772 1137.64)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -425.314 1203.88)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -382.856 1270.12)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -340.402 1336.37)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -297.943 1402.61)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -255.488 1468.85)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -213.033 1535.09)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -170.575 1601.34)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -747.599 741.831)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -128.117 1667.58)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -705.141 808.076)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -618.298 945.53)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -618.297 840.53)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -575.84 1011.77)" stroke="#BECDF8"/>
+<line y1="-0.5" x2="2291.25" y2="-0.5" transform="matrix(0.758881 -0.651229 0.758881 0.651229 -533.389 1078.02)" stroke="#BECDF8"/>
+</g>
+</g>
+</svg>

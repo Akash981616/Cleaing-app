@@ -1,0 +1,78 @@
+.card-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 255px;
+  height: 149px;
+  background: #ffffff;
+  border: 1px solid #efefef;
+  box-shadow: 0px 4px 30px #f2f2f2;
+  border-radius: 11px;
+}
+.Img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 62px;
+  height: 52px;
+  border: 1px dashed #d8d8d8;
+  border-radius: 10px;
+}
+.Detail-container {
+  width: 180px;
+  margin-left: 50px;
+  margin-top: -20px;
+  height: 128px;
+}
+.upper-status-container {
+  display: flex;
+  flex-direction: row;
+}
+.Bottom-status-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Bottom-status-container span {
+  font-family: "Poppins";
+  font-style: normal;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+}
+.Detail-container h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+.Detail-container h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+}
+.Bottom-status-container h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+.propertyname-container h3 {
+  font-family: "Poppins";
+  font-style: normal;
+}
+.para-heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+}
+.propertyname-container-heading p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 550;
+}

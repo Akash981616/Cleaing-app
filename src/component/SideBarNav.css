@@ -1,0 +1,33 @@
+.navBar-container {
+  margin-top: 50px;
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+.navbar-option-content {
+    width: 195px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    padding: 0px 30px;
+}
+.navbar-option-content img {
+  margin-right: 15px;
+}
+.navbar-option:hover{
+  cursor: pointer;
+}
+.navbar-option h3{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+}
