@@ -1,0 +1,127 @@
+.userpage-top-conatiner {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ebebeb;
+  height: 50px;
+}
+.userpage-top-conatiner-select-menu {
+  :hover{
+    cursor: pointer;
+  }
+  width: 450px;
+}
+.userpage-top-conatiner-select-menu button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: #a8a8a8;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  background: none;
+}
+.userpage-top-conatiner-utility {
+  width: 1266px;
+  display: flex;
+  margin-top: 40px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 49px;
+}
+.userpage-top-conatiner-utility h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  color: #212121;
+}
+.userpage-search-filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 49px;
+  width: 669px;
+}
+.userpage-search-container {
+  width: 190px;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 2px;
+}
+.userpage-search-container :hover {
+  cursor: pointer;
+}
+.userpage-search-container input {
+  height: 35px;
+  width: 160px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #949494;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+.userpage-filter-container {
+  width: 160px;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 102px;
+}
+.userpage-filter-container:hover {
+  cursor: pointer;
+}
+.userpage-filter-container h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #949494;
+}
+.create-user-button {
+  width: 200px;
+  padding: 16px 20px;
+  background: #8a8a8a;
+  border-radius: 4px;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.create-user-button:hover {
+  cursor: pointer;
+}
+.create-user-button h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+}
+.userpage-list-container {
+  overflow: auto;
+  height: 490px;
+  margin-top: 15px;
+}
+.userpage-list-container::-webkit-scrollbar {
+  display: none;
+}
