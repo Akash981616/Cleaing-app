@@ -5,9 +5,8 @@ import DownArrow from "../assets/downArrow.svg";
 import "./UserPage.scss";
 import plusCircleICon from "../assets/plusCircle.svg";
 import List from "../component/List";
-import {data} from "../data/listData.js"
+import { data } from "../data/listData.js";
 const UserPage = () => {
- 
   const selectStyle = {
     backgroundColor: "#8A8A8A",
     borderRadius: "4px 4px 0px 0px",
@@ -73,18 +72,50 @@ const UserPage = () => {
         />
       </div>
       <div className="userpage-list-container">
-        {data.map((e) => {
-          return (
-            <List key={e.id}
-              name={e.name}
-              phoneno={e.phoneno}
-              property={e.property}
-              email={e.email}
-              city={e.city}
-              document={e.document}
-            />
-          );
-        })}
+        {selectOptiom === "Cleaner" ? (
+          <div>
+            {data.map((e) => {
+              return (
+                <List
+                  key={e.id}
+                  name={e.name}
+                  phoneno={e.phoneno}
+                  property={e.property}
+                  email={e.email}
+                  city={e.city}
+                  document={e.document}
+                  status={e.status}
+                  contract={e.contract}
+                  ownerType={e.ownerType}
+                  type={"cleaner"}
+                />
+              );
+            })}
+          </div>
+        ) : selectOptiom === "Guest" ? (
+          <div>
+            Guest
+            {data.map((e) => {
+              return (
+                <List
+                  key={e.id}
+                  name={e.name}
+                  phoneno={e.phoneno}
+                  property={e.property}
+                  email={e.email}
+                  city={e.city}
+                  document={e.document}
+                  status={e.status}
+                  contract={e.contract}
+                  ownerType={e.ownerType}
+                  type={selectOptiom}
+                />
+              );
+            })}
+          </div>
+        ) : (
+          <div>Ownwer</div>
+        )}
       </div>
     </div>
   );

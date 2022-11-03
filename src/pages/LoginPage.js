@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "../index.css";
+import "./Login.scss";
 import HomeIcon from "../assets/VectorhomeIcon.png";
 import closeEyeIcon from "../assets/fi_eye-off.svg";
 import openEyeIcon from "../assets/EyeIcon.svg";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 const LoginPage = () => {
+  const router = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   useEffect(() => {}, []);
 
@@ -45,11 +48,17 @@ const LoginPage = () => {
         </div>
 
         <div className="button-container">
-          <button>Sign In &#8594;</button>
+          <button
+            onClick={(e) => {
+              router("/admin-dashboard");
+            }}
+          >
+            Sign In &#8594;
+          </button>
         </div>
         <div>
           <h4>
-            Don't have an account yet ? <a href="#sinup">SignUp</a>
+            Don't have an account yet ? <Link to="/signup">SignUp</Link>
           </h4>
         </div>
         <div className="form-footer">

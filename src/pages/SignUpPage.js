@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import EyeIcon from "../assets/fi_eye-off.svg";
 import "./SignUpPage.css";
 const SingupPage = () => {
@@ -48,11 +49,12 @@ const SingupPage = () => {
             type={showPassword === true ? "text" : "password"}
             placeholder="Enter Password"
           />
-          <img className="password-showIcon-eye"
+          <img
+            className="password-showIcon-eye"
             onClick={() => {
               setShowPassword(!showPassword);
             }}
-            style={{ top: "542px",left:"565px" ,position:"absolute"}}
+            style={{ top: "542px", left: "565px", position: "absolute" }}
             src={EyeIcon}
             alt="error"
           />
@@ -63,7 +65,7 @@ const SingupPage = () => {
         </div>
         <div>
           <h4>
-            Already have an Account ? <a href="/sfsdafa">Login</a>
+            Already have an Account ? <Link to="/">Login</Link>
           </h4>
         </div>
         <div className="form-footer">

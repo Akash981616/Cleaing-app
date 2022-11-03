@@ -2,7 +2,17 @@ import React from "react";
 import "./List.scss";
 import userEditIcon from "../assets/userEditIcon.svg";
 import userDeleteIcon from "../assets/userDeleteIcon.svg";
-const List = ({ name, phoneno, property, email, document, city, header }) => {
+import EyeAction from "../assets/EyeAction.svg";
+const List = ({
+  name,
+  phoneno,
+  property,
+  email,
+  document,
+  city,
+  header,
+  type,
+}) => {
   return (
     <div className={header ? "list-container" : "list-container-list"}>
       <div className="list-name-container">
@@ -49,9 +59,15 @@ const List = ({ name, phoneno, property, email, document, city, header }) => {
           <h4>Action</h4>
         ) : (
           <div class="userPage-curd-operation">
+            {type === "Guest" && (
+              <div class="userPage-curd-operation-div">
+                <img src={userEditIcon} alt="error"></img>
+              </div>
+            )}
             <div class="userPage-curd-operation-div">
-              <img src={userEditIcon} alt="error"></img>
+              <img src={EyeAction} alt="error"></img>
             </div>
+
             <div class="userPage-curd-operation-div-white">
               <img src={userDeleteIcon} alt="error"></img>
             </div>
