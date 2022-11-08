@@ -1,10 +1,7 @@
 import React from "react";
-import LoadingBarIcon from "../assets/loadingBar.svg";
-import ProfileImg from "../assets/ProfileImg.svg";
 import AlarmIcon from "../assets/AlarmIcon.svg";
 import SearchIcon from "../assets/Search-Icon.svg";
 import DownArrow from "../assets/downArrow.svg";
-import profileLoadingBar from "../assets/profileLoadingBar.svg";
 const TopNavBar = ({ currAppState }) => {
   return (
     <div className="main-dashBoard-container-navbar">
@@ -22,7 +19,10 @@ const TopNavBar = ({ currAppState }) => {
           </div>
         </div>
         <div className="main-dashBoard-container-navbar-right-icons">
-          <img src={ProfileImg} alt="error"></img>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/21/21104.png"
+            alt="error"
+          ></img>
           <h6>John Doe</h6>
           <img style={{ width: "15px" }} src={DownArrow} alt="error"></img>
         </div>

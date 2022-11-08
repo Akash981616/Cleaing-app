@@ -65,7 +65,7 @@ const LoginPage = () => {
           <h4>&copy; 2022 All Right Reserved</h4>
         </div>
       </div>
-      {/* this is second container */}
+      {/*  second container */}
       <div className="right-side-container">
         <div className="text-container">
           <h2>

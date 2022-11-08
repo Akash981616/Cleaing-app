@@ -15,11 +15,11 @@ const InpectionPage = () => {
       />
       <FunctionBar
         title={
-          selectOption === "Ownwer"
-            ? " Onwer List"
-            : selectOption === "Cleaner"
-            ? "Cleaner List"
-            : "Guest List"
+          selectOption === "Cleaners"
+            ? "All Inspection - Cleaners"
+            : selectOption === "Guests Check In"
+            ? "All Inspection - Guests Check In"
+            : "All Inspection - Cleaners Check Out"
         }
         createProfile={
           selectOption === "Cleaners"
