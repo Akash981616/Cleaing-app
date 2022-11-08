@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import SelectButton from "../component/SelectButton";
 
 const ReportPage = () => {
-  return <div>ReportPage</div>;
+  const [selectOption, setSelectOption] = useState("Ownwer");
+  return (
+    <>
+      <SelectButton
+        firstOption={"Ownwer"}
+        secondOption={"Cleaner"}
+        thirdOprtion={"Guest"}
+        selectOption={selectOption}
+        setSelectOption={setSelectOption}
+      />
+    </>
+  );
 };
 
 export default ReportPage;

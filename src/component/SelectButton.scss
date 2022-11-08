@@ -1,0 +1,24 @@
+.userpage-top-conatiner {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ebebeb;
+  height: 50px;
+}
+.userpage-top-conatiner-select-menu {
+  :hover{
+    cursor: pointer;
+  }
+  width: 450px;
+}
+.userpage-top-conatiner-select-menu button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: #a8a8a8;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  background: none;
+}

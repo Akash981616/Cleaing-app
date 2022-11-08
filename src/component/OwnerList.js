@@ -1,9 +1,9 @@
 import React from "react";
-import "./List.scss";
+import "./OnwerList.scss";
 import userEditIcon from "../assets/userEditIcon.svg";
 import userDeleteIcon from "../assets/userDeleteIcon.svg";
 import EyeAction from "../assets/EyeAction.svg";
-const List = ({
+const OnwerList = ({
   name,
   phoneno,
   property,
@@ -11,7 +11,10 @@ const List = ({
   document,
   city,
   header,
-  editIcon,
+  ownerType,
+  type,
+  contractType,
+  status,
 }) => {
   return (
     <div className={header ? "list-container" : "list-container-list"}>
@@ -32,6 +35,9 @@ const List = ({
       >
         <h4>{email}</h4>
       </div>
+      <div className="list-name-container">
+        <h4>{ownerType}</h4>
+      </div>
       <div
         className={
           header ? "list-property-container" : "list-property-container-list"
@@ -39,6 +45,10 @@ const List = ({
       >
         <h4>{property}</h4>
       </div>
+      <div className="list-name-container">
+        <h4>{contractType}</h4>
+      </div>
+
       <div
         className={
           header ? "list-property-container" : "list-city-container-list"
@@ -51,15 +61,14 @@ const List = ({
           header ? "list-document-container" : "list-document-container-list"
         }
       >
-        <h4>{document}</h4>
+        <h4>{status}</h4>
       </div>
-
       <div className="list-action-container">
         {header ? (
           <h4>Action</h4>
         ) : (
           <div className="userPage-curd-operation">
-            {editIcon && (
+            {type === "Guest" && (
               <div className="userPage-curd-operation-div">
                 <img src={userEditIcon} alt="error"></img>
               </div>
@@ -78,4 +87,4 @@ const List = ({
   );
 };
 
-export default List;
+export default OnwerList;

@@ -1,78 +1,66 @@
 import React, { useState } from "react";
-import UserSearchIcon from "../assets/UserSearchIcon.svg";
-import TopNavBar from "../component/TopNavBar";
-import DownArrow from "../assets/downArrow.svg";
-import "./UserPage.scss";
-import plusCircleICon from "../assets/plusCircle.svg";
 import List from "../component/List";
+import "./UserPage.scss";
 import { data } from "../data/listData.js";
+
+import OnwerList from "../component/OwnerList";
+import FunctionBar from "../component/FunctionBar";
+import SelectButton from "../component/SelectButton";
 const UserPage = () => {
-  const selectStyle = {
-    backgroundColor: "#8A8A8A",
-    borderRadius: "4px 4px 0px 0px",
-    color: "#FFFFFF",
-  };
-  const [selectOptiom, setSelectOptiom] = useState("Ownwer");
+  const [selectOption, setSelectOption] = useState("Ownwer");
   return (
     <div>
-      <TopNavBar />
-      <div className="userpage-top-conatiner">
-        <div className="userpage-top-conatiner-select-menu">
-          <button
-            style={selectOptiom === "Ownwer" ? selectStyle : {}}
-            onClick={() => {
-              setSelectOptiom("Ownwer");
-            }}
-          >
-            Ownwer
-          </button>
-          <button
-            style={selectOptiom === "Cleaner" ? selectStyle : {}}
-            onClick={() => {
-              setSelectOptiom("Cleaner");
-            }}
-          >
-            Cleaner
-          </button>
-          <button
-            style={selectOptiom === "Guest" ? selectStyle : {}}
-            onClick={() => {
-              setSelectOptiom("Guest");
-            }}
-          >
-            Guest
-          </button>
-        </div>
-      </div>
-      <div className="userpage-top-conatiner-utility">
-        <h1>Onwer List</h1>
-        <div className="userpage-search-filter-container">
-          <div className="userpage-search-container">
-            <input type="text" placeholder="Search"></input>
-            <img src={UserSearchIcon} alt="error"></img>
-          </div>
-          <div className="userpage-filter-container">
-            <h3>Filter</h3>
-            <img src={DownArrow} alt="error"></img>
-          </div>
-          <button className="create-user-button">
-            <img src={plusCircleICon} alt="error"></img> <h3>Create User</h3>
-          </button>
-        </div>
-      </div>
+      <SelectButton
+        firstOption={"Ownwer"}
+        secondOption={"Cleaner"}
+        thirdOprtion={"Guest"}
+        selectOption={selectOption}
+        setSelectOption={setSelectOption}
+      />
+
+      <FunctionBar
+        title={
+          selectOption === "Ownwer"
+            ? " Onwer List"
+            : selectOption === "Cleaner"
+            ? "Cleaner List"
+            : "Guest List"
+        }
+        createProfile={
+          selectOption === "Ownwer"
+            ? "User"
+            : selectOption === "Cleaner"
+            ? "Cleaner"
+            : "Guest"
+        }
+      />
       <div style={{ marginTop: "40px" }}>
-        <List
-          name={"Name"}
-          phoneno={"Phone no."}
-          property={"Property"}
-          email={"Email"}
-          city={"City"}
-          document={"Docment"}
-          header={true}
-        />
+        {selectOption === "Cleaner" || selectOption === "Guest" ? (
+          <List
+            name={"Name"}
+            phoneno={"Phone no."}
+            property={"Property"}
+            email={"Email"}
+            city={"City"}
+            document={"Docment"}
+            header={true}
+          />
+        ) : (
+          <OnwerList
+            name={"Name"}
+            phoneno={"Phone No."}
+            property={"Propery"}
+            email={"Email"}
+            city={"City"}
+            header={true}
+            ownerType={"Owner Type"}
+            contractType={"Contract"}
+            status={"Status"}
+          />
+        )}
       </div>
       <div className="userpage-list-container">
-        {selectOptiom === "Cleaner" ? (
+        {selectOption === "Cleaner" ? (
           <div>
             {data.map((e) => {
               return (
@@ -92,9 +80,8 @@ const UserPage = () => {
               );
             })}
           </div>
-        ) : selectOptiom === "Guest" ? (
+        ) : selectOption === "Guest" ? (
           <div>
-            Guest
             {data.map((e) => {
               return (
                 <List
@@ -108,13 +95,28 @@ const UserPage = () => {
                   status={e.status}
                   contract={e.contract}
                   ownerType={e.ownerType}
-                  type={selectOptiom}
+                  editIcon={true}
                 />
               );
             })}
           </div>
         ) : (
-          <div>Ownwer</div>
+          <div>
+            {data.map((e) => {
+              return (
+                <OnwerList
+                  name={"Name"}
+                  phoneno={"Phone No."}
+                  property={"Propery"}
+                  email={"Email"}
+                  city={"City"}
+                  ownerType={"Owner Type"}
+                  contractType={"Contract"}
+                  status={"Status"}
+                />
+              );
+            })}
+          </div>
         )}
       </div>
     </div>

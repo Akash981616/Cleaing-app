@@ -77,9 +77,7 @@ const data = {
 const DashBoard = () => {
   return (
     <>
-      <div>
-        <TopNavBar />
-      </div>
+      
       <div className="main-dashBoard-scroll-container">
         <div className="PropertyDetailCard-container">
           {cdata.map((e) => {
