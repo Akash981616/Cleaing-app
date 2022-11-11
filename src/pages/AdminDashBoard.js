@@ -8,16 +8,28 @@ import InpectionPage from "./InpectionPage";
 import PropertyPage from "./PropertyPage.js";
 import ReportPage from "./ReportPage";
 import TopNavBar from "../component/TopNavBar";
+import Model from "../model/Model";
 const AdminDashBoard = () => {
+  const [isModelOpen, SetIsModelOpen] = useState(true);
   const [currAppState, setCurrAppState] = useState("DashBoard");
   return (
-    <div className="dashboard-container">
+    <div
+      // style={
+      //   isModelOpen === true ? { pointerEvents: "none",  } : {}
+      // }
+      className="dashboard-container"
+    >
+      {isModelOpen && <Model />}
       <SideBarNav
         currAppState={currAppState}
         setCurrAppState={setCurrAppState}
       />
+
       {/* second Div */}
-      <div className="main-dashBoard-container">
+      <div
+        onClick={() => SetIsModelOpen(!isModelOpen)}
+        className="main-dashBoard-container"
+      >
         <div>
           <TopNavBar currAppState={currAppState} />
         </div>

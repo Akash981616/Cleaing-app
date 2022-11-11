@@ -3,6 +3,7 @@ import "./OnwerList.scss";
 import userEditIcon from "../assets/userEditIcon.svg";
 import userDeleteIcon from "../assets/userDeleteIcon.svg";
 import EyeAction from "../assets/EyeAction.svg";
+import DeleteModel from "../model/Model";
 const OnwerList = ({
   name,
   phoneno,
@@ -15,6 +16,7 @@ const OnwerList = ({
   type,
   contractType,
   status,
+  deleteFunction,
 }) => {
   return (
     <div className={header ? "list-container" : "list-container-list"}>
@@ -77,7 +79,10 @@ const OnwerList = ({
               <img src={EyeAction} alt="error"></img>
             </div>
 
-            <div className="userPage-curd-operation-div-white">
+            <div
+              className="userPage-curd-operation-div-white"
+              onClick={() => {}}
+            >
               <img src={userDeleteIcon} alt="error"></img>
             </div>
           </div>

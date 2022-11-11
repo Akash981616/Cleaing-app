@@ -27,10 +27,10 @@ const ContractPage = () => {
         }
         createProfile={
           selectOption === "Ownwer"
-            ? "Create Cleaner"
+            ? "Cleaner"
             : selectOption === "Cleaner"
-            ? "All Contracts - Cleaner"
-            : "All Contracts - Guest"
+            ? "Cleaner"
+            : "Guest"
         }
       />
 

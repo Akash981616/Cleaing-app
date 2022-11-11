@@ -7,6 +7,8 @@ import OnwerList from "../component/OwnerList";
 import FunctionBar from "../component/FunctionBar";
 import SelectButton from "../component/SelectButton";
 const UserPage = () => {
+  
+  const [isModelOpen, setIsModelOpen] = useState(false);
   const [selectOption, setSelectOption] = useState("Ownwer");
   return (
     <div>
@@ -76,6 +78,7 @@ const UserPage = () => {
                   contract={e.contract}
                   ownerType={e.ownerType}
                   type={"cleaner"}
+                  
                 />
               );
             })}
@@ -113,6 +116,7 @@ const UserPage = () => {
                   ownerType={"Owner Type"}
                   contractType={"Contract"}
                   status={"Status"}
+                  
                 />
               );
             })}

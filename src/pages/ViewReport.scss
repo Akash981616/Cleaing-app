@@ -1,0 +1,64 @@
+.create-service-form-containercreate-service-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 80px;
+}
+.create-service-form-header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  color: #212121;
+}
+
+.service-input-description-container {
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #929292;
+  }
+  textarea {
+    padding: 20px 20px;
+    width: 997px;
+    height: 115px;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+.service-input-button-container {
+  :hover {
+    cursor: pointer;
+  }
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px 20px;
+  button {
+    width: 182.25px;
+    height: 54px;
+    background: #8a8a8a;
+    border-radius: 4px;
+    border: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+  }
+}
+.view-report-image-container {
+  img {
+    width: 100px;
+    height: 90px;
+    margin-right: 30px;
+   object-fit: cover;
+   background-position: center;
+  }
+}

@@ -1,0 +1,33 @@
+.service-input-container {
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #929292;
+  }
+  input {
+    padding: 5px 20px;
+    width: 300px;
+    height: 50px;
+    left: 276px;
+    top: 403.74px;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #929292;
+  }
+  input:focus {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #929292;
+  }
+}
