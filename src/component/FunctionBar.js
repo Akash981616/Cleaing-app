@@ -3,7 +3,13 @@ import UserSearchIcon from "../assets/UserSearchIcon.svg";
 import DownArrow from "../assets/downArrow.svg";
 import plusCircleICon from "../assets/plusCircle.svg";
 import "./FunctionBar.scss";
-const FunctionBar = ({ title, createProfile, onClickFunction }) => {
+import Model from "../model/Model";
+const FunctionBar = ({
+  title,
+  createProfile,
+  onClickFunction,
+  createFormFunction,
+}) => {
   return (
     <div className="userpage-top-conatiner-utility">
       <h1>{title}</h1>
@@ -17,7 +23,12 @@ const FunctionBar = ({ title, createProfile, onClickFunction }) => {
           <img src={DownArrow} alt="error"></img>
         </div>
         {createProfile && (
-          <button className="create-user-button" onClick={onClickFunction}>
+          <button
+            className="create-user-button"
+            onClick={() => {
+              createFormFunction(true);
+            }}
+          >
             <img src={plusCircleICon} alt="error"></img>
             <h3>Create {createProfile}</h3>
           </button>

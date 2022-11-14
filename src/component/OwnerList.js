@@ -4,6 +4,7 @@ import userEditIcon from "../assets/userEditIcon.svg";
 import userDeleteIcon from "../assets/userDeleteIcon.svg";
 import EyeAction from "../assets/EyeAction.svg";
 import DeleteModel from "../model/Model";
+import Model from "../model/Model";
 const OnwerList = ({
   name,
   phoneno,
@@ -81,7 +82,7 @@ const OnwerList = ({
 
             <div
               className="userPage-curd-operation-div-white"
-              onClick={() => {}}
+              onClick={() => {Model()}}
             >
               <img src={userDeleteIcon} alt="error"></img>
             </div>

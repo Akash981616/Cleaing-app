@@ -4,14 +4,26 @@ import List from "../component/List";
 import { data } from "../data/listData";
 import "./ViewReport.scss";
 import ViewReport from "./ViewReport";
+import Model from "../model/Model";
 
 const ReportPage = () => {
   const createSevrice = () => {
     SetViewReportTooggle(true);
   };
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   const [ViewReportTooggle, SetViewReportTooggle] = useState(false);
   return (
     <>
+      {open === true && (
+        <Model
+          open={open}
+          handleOpen={handleOpen}
+          handleClose={handleClose}
+          setOpen={setOpen}
+        />
+      )}
       {ViewReportTooggle === true ? (
         <ViewReport />
       ) : (
@@ -43,6 +55,8 @@ const ReportPage = () => {
                   email={"Image"}
                   city={"Description"}
                   document={"Status"}
+                  setOpen={setOpen}
+                  SetViewReportTooggle={SetViewReportTooggle}
                 />
               );
             })}

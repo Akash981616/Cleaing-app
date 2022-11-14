@@ -2,13 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./Login.scss";
 import HomeIcon from "../assets/VectorhomeIcon.png";
 import closeEyeIcon from "../assets/fi_eye-off.svg";
-import openEyeIcon from "../assets/EyeIcon.svg";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 const LoginPage = () => {
   const router = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
-  useEffect(() => {}, []);
 
   return (
     <div className="LoginPageContainer">

@@ -3,6 +3,7 @@ import "./List.scss";
 import userEditIcon from "../assets/userEditIcon.svg";
 import userDeleteIcon from "../assets/userDeleteIcon.svg";
 import EyeAction from "../assets/EyeAction.svg";
+
 const List = ({
   name,
   phoneno,
@@ -12,6 +13,8 @@ const List = ({
   city,
   header,
   editIcon,
+  setOpen,
+  SetViewReportTooggle,
 }) => {
   return (
     <div className={header ? "list-container" : "list-container-list"}>
@@ -64,11 +67,19 @@ const List = ({
                 <img src={userEditIcon} alt="error"></img>
               </div>
             )}
-            <div className="userPage-curd-operation-div">
+            <div
+              className="userPage-curd-operation-div"
+              onClick={() => {
+                SetViewReportTooggle(true);
+              }}
+            >
               <img src={EyeAction} alt="error"></img>
             </div>
 
-            <div className="userPage-curd-operation-div-white">
+            <div
+              className="userPage-curd-operation-div-white"
+              onClick={() => setOpen(true)}
+            >
               <img src={userDeleteIcon} alt="error"></img>
             </div>
           </div>

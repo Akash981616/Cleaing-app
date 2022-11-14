@@ -9,9 +9,10 @@ import PropertyPage from "./PropertyPage.js";
 import ReportPage from "./ReportPage";
 import TopNavBar from "../component/TopNavBar";
 import Model from "../model/Model";
+
 const AdminDashBoard = () => {
-  const [isModelOpen, SetIsModelOpen] = useState(true);
-  const [currAppState, setCurrAppState] = useState("DashBoard");
+  const [isModelOpen, SetIsModelOpen] = useState(false);
+  const [currAppState, setCurrAppState] = useState("Users");
   return (
     <div
       // style={
@@ -19,7 +20,6 @@ const AdminDashBoard = () => {
       // }
       className="dashboard-container"
     >
-      {isModelOpen && <Model />}
       <SideBarNav
         currAppState={currAppState}
         setCurrAppState={setCurrAppState}

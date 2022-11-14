@@ -1,5 +1,3 @@
-
-
 .userpage-list-container {
   overflow: auto;
   height: 490px;
@@ -7,4 +5,34 @@
 }
 .userpage-list-container::-webkit-scrollbar {
   display: none;
+}
+.seprator {
+  height: 0.1px;
+  border: 0.1px solid #ebebeb;
+  margin: 0px -45px;
+}
+.create-user-form-types {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+
+  h1 {
+    margin-right: 40px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #212121;
+  }
+}
+.form-progressBar-contaier {
+  width: 100%;
+
+}
+.form-progressBar {
+  position: absolute;
+  width: 100%;
+  margin: 0px -45px;
+  border: 1px solid #919191ed;
+  height: 0px;
 }

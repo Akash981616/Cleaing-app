@@ -6,7 +6,7 @@ const ViewReport = () => {
     <div className="create-service-form-container">
       <h1 className="create-service-form-header">View Report</h1>
       <form>
-        <div className="create-service-form-containercreate-service-form-container">
+        <div className="form-container-create-container ">
           {ViewFormSchema.map((schema) => {
             return (
               <InputBar

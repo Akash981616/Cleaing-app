@@ -5,8 +5,6 @@ import SelectButton from "../component/SelectButton";
 
 const PropertyPage = () => {
   const [selectOption, setSelectOption] = useState("Property List");
-
-
   return (
     <div>
       <SelectButton
