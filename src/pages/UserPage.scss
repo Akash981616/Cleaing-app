@@ -15,7 +15,6 @@
   margin: 10px;
   display: flex;
   flex-direction: row;
-
   h1 {
     margin-right: 40px;
     font-family: "Poppins";
@@ -27,7 +26,6 @@
 }
 .form-progressBar-contaier {
   width: 100%;
-
 }
 .form-progressBar {
   position: absolute;
@@ -35,4 +33,60 @@
   margin: 0px -45px;
   border: 1px solid #919191ed;
   height: 0px;
+}
+.cleaner-upload-image {
+  margin-top: 40px;
+  h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #929292;
+  }
+  img {
+    margin: 0px 5px;
+    width: 100px;
+    height: 90px;
+  }
+  input {
+    width: 100px;
+    height: 90px;
+  }
+}
+.cleaner-upload-image-container {
+  display: flex;
+  flex-direction: row;
+  input {
+    width: 100px;
+    height: 90px;
+  }
+  input[type="file"] {
+    display: none;
+  }
+}
+.custom-file-upload {
+  margin: 0px 5px;
+  background: #d9d9d9;
+  width: 100px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    align-items: center;
+    justify-self: center;
+    width: 40px;
+    height: 40px;
+  }
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #8a8a8a;
 }

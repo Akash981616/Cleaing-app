@@ -1,0 +1,56 @@
+.contract-template-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordin-details-container {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: auto;
+  height: 55px;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 99px;
+  margin-bottom: 10px;
+  label {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #262626;
+  }
+}
+.accordin-header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #212121;
+}
+.accordin-third-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  label {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #262626;
+  }
+
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 9px;
+}
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  height: 55px;
+}

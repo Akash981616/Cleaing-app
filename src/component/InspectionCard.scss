@@ -1,0 +1,73 @@
+.inspectionCard-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 248px;
+  height: 148px;
+  background: #f9f9f9;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  header {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: #212121;
+  }
+  h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+    color: #262626;
+    align-self: center;
+    justify-self: center;
+  }
+  :hover {
+    cursor: pointer;
+  }
+}
+.inspectionCard-container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  img {
+    margin-left: 5px;
+  }
+}
+.inspectionCard-container-msglogo {
+  margin-left: 223px;
+  margin-top: 23px;
+}
+.inspectionCard-container-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  width: 248px;
+  height: 148px;
+  background: #f9f9f9;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+}
+.add-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  header {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+
+    text-align: center;
+
+    color: #262626;
+  }
+  :hover {
+    cursor: pointer;
+  }
+}

@@ -3,12 +3,11 @@ import UserSearchIcon from "../assets/UserSearchIcon.svg";
 import DownArrow from "../assets/downArrow.svg";
 import plusCircleICon from "../assets/plusCircle.svg";
 import "./FunctionBar.scss";
-import Model from "../model/Model";
 const FunctionBar = ({
   title,
   createProfile,
-  onClickFunction,
-  createFormFunction,
+  SetUserPageFormState,
+  userPageFormState,
 }) => {
   return (
     <div className="userpage-top-conatiner-utility">
@@ -26,7 +25,7 @@ const FunctionBar = ({
           <button
             className="create-user-button"
             onClick={() => {
-              createFormFunction(true);
+              SetUserPageFormState(`${createProfile}`);
             }}
           >
             <img src={plusCircleICon} alt="error"></img>

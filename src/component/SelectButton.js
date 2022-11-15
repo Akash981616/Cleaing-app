@@ -7,6 +7,7 @@ const SelectButton = ({
   secondOption,
   thirdOprtion,
   createFormFunction,
+  contractTemplate,
 }) => {
   const selectStyle = {
     backgroundColor: "#8A8A8A",
@@ -47,6 +48,10 @@ const SelectButton = ({
           </button>
         )}
       </div>
+
+      {contractTemplate && (
+        <button className="contract-template-btn">Contract Template</button>
+      )}
     </div>
   );
 };

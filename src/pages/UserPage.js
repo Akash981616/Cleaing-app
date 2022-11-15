@@ -2,19 +2,25 @@ import React, { useState } from "react";
 import List from "../component/List";
 import "./UserPage.scss";
 import { data } from "../data/listData.js";
-
 import OnwerList from "../component/OwnerList";
 import FunctionBar from "../component/FunctionBar";
 import SelectButton from "../component/SelectButton";
 import CreateOwnerForm from "../forms/CreateOwnerForm";
+import CreateCleaner from "../forms/CreateCleaner";
+import CreateGuestForm from "../forms/CreateGuestForm";
 
 const UserPage = () => {
   const [selectOption, setSelectOption] = useState("Ownwer");
-  const [CreateOwnerFormToggle, SetCreateOwnerFormToggle] = useState(false);
+  const [userPageFormState, SetUserPageFormState] = useState("");
+  console.log(userPageFormState);
   return (
     <div>
-      {CreateOwnerFormToggle === true ? (
+      {userPageFormState === "User" ? (
         <CreateOwnerForm />
+      ) : userPageFormState === "Cleaner" ? (
+        <CreateCleaner />
+      ) : userPageFormState === "Guest" ? (
+        <CreateGuestForm />
       ) : (
         <div>
           <SelectButton
@@ -40,7 +46,8 @@ const UserPage = () => {
                 ? "Cleaner"
                 : "Guest"
             }
-            createFormFunction={SetCreateOwnerFormToggle}
+            SetUserPageFormState={SetUserPageFormState}
+            userPageFormState={userPageFormState}
           />
           <div style={{ marginTop: "40px" }}>
             {selectOption === "Cleaner" || selectOption === "Guest" ? (

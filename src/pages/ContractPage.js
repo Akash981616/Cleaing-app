@@ -1,22 +1,27 @@
-import { List } from "@mui/material";
 import React, { useState } from "react";
 import ContractList from "../component/ContractList";
 import FunctionBar from "../component/FunctionBar";
-import OnwerList from "../component/OwnerList";
+import "./ContractPage.scss";
 import SelectButton from "../component/SelectButton";
 import { data } from "../data/listData";
+import ContractTemplate from "./ContractTemplate";
 
 const ContractPage = () => {
   const [selectOption, setSelectOption] = useState("Ownwer");
   return (
     <>
-      <SelectButton
-        firstOption={"Ownwer"}
-        secondOption={"Cleaner"}
-        thirdOprtion={"Guest"}
-        selectOption={selectOption}
-        setSelectOption={setSelectOption}
-      />
+      <div className="contract-template">
+        <ContractTemplate />
+        {/* <SelectButton
+          firstOption={"Ownwer"}
+          secondOption={"Cleaner"}
+          thirdOprtion={"Guest"}
+          selectOption={selectOption}
+          setSelectOption={setSelectOption}
+          contractTemplate={true}
+        />
+        
+      </div>
       <FunctionBar
         title={
           selectOption === "Ownwer"
@@ -98,7 +103,7 @@ const ContractPage = () => {
               );
             })}
           </div>
-        )}
+        )} */}
       </div>
     </>
   );

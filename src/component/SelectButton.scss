@@ -2,11 +2,12 @@
   margin-top: 40px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   border-bottom: 1px solid #ebebeb;
   height: 50px;
 }
 .userpage-top-conatiner-select-menu {
-  :hover{
+  :hover {
     cursor: pointer;
   }
   width: 450px;
@@ -21,4 +22,20 @@
   font-weight: 500;
   font-size: 14px;
   background: none;
+}
+.contract-template-btn {
+  background: #8a8a8a;
+  border-radius: 4px;
+  width: 173px;
+  height: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  border: none;
+  text-align: center;
+  color: #ffffff;
+}
+.contract-template-btn:hover {
+  cursor: pointer;
 }

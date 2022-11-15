@@ -1,6 +1,7 @@
 import React from "react";
 import InputBar from "../component/InputBar";
 import { createOnwerSchema } from "../data/createOnwerSchema";
+import Slider from "@mui/material/Slider";
 const CreateOwnerForm = () => {
   return (
     <div>
@@ -11,9 +12,11 @@ const CreateOwnerForm = () => {
         <h1>Create Property Item</h1>
         <h1>Create Contract Owner</h1>
       </div>
-      <div className="form-progressBar-contaier">
-        <div className="form-progressBar"></div>
-      </div>
+      <Slider 
+        style={{ color: "grey" }}
+        size="small"
+        defaultValue={30}
+      />
       <div className="create-service-form-container">
         <form>
           <div className="form-container-create-container ">

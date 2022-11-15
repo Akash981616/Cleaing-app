@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FunctionBar from "../component/FunctionBar";
 import SelectButton from "../component/SelectButton";
+import CreateInpectionForm from "../forms/CreateInpectionForm";
 
 const InpectionPage = () => {
   const [selectOption, setSelectOption] = useState("Cleaners");
@@ -29,6 +30,7 @@ const InpectionPage = () => {
             : "Guest"
         }
       />
+      <CreateInpectionForm />
     </>
   );
 };

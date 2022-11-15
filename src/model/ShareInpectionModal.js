@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./Model.scss";
 import ModelDeleteIcon from "../assets/ModelDeleteIcon.svg";
@@ -21,8 +20,7 @@ const style = {
   flexDirection: "column",
   border: "none",
 };
-
-const Model = ({ open, handleOpen, handleClose, setOpen }) => {
+const ShareInpectionModal = () => {
   const close = () => {
     setOpen(false);
   };
@@ -55,4 +53,4 @@ const Model = ({ open, handleOpen, handleClose, setOpen }) => {
   );
 };
 
-export default Model;
+export default ShareInpectionModal;
