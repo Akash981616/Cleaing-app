@@ -78,7 +78,7 @@ const DashBoard = () => {
   return (
     <>
       
-      <div className="main-dashBoard-scroll-container">
+      <div className="scroll-container">
         <div className="PropertyDetailCard-container">
           {cdata.map((e) => {
             return (

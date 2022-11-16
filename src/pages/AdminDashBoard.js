@@ -15,9 +15,6 @@ const AdminDashBoard = () => {
   const [currAppState, setCurrAppState] = useState("Users");
   return (
     <div
-      // style={
-      //   isModelOpen === true ? { pointerEvents: "none",  } : {}
-      // }
       className="dashboard-container"
     >
       <SideBarNav

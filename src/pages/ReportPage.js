@@ -44,7 +44,7 @@ const ReportPage = () => {
               header={true}
             />
           </div>
-          <div className="userpage-list-container">
+          <div className="userpage-list-container" style={{ height: "35rem" }}>
             {data.map((e) => {
               return (
                 <List

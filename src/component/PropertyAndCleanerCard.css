@@ -10,16 +10,16 @@
   border-radius: 11px;
 }
 .property-img-card-container {
-  width: 1262px;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.main-dashBoard-scroll-container {
+.scroll-container {
   height: 87%;
   overflow: scroll;
 }
-.main-dashBoard-scroll-container::-webkit-scrollbar {
+.scroll-container::-webkit-scrollbar {
   display: none;
 }
 .property-card-container {
