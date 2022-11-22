@@ -1,6 +1,6 @@
 import React from "react";
 import "./PropertyAndCleanerCard.css";
-import EyeIcon from "../assets/EyeIcon.svg"
+import EyeIcon from "../assets/EyeIcon.svg";
 const PropertyAndCleanerCard = ({
   detail,
   imgLink,
@@ -8,10 +8,9 @@ const PropertyAndCleanerCard = ({
   views,
   ownerName,
 }) => {
- 
-    return (
+  return (
     <div
-      style={{ height: `${views ? "320px" : "302px"}` }}
+      style={{ height: `${views ? "310px" : "292px"}` }}
       className="property-card-container"
     >
       <div>
@@ -21,7 +20,7 @@ const PropertyAndCleanerCard = ({
 
           {views ? (
             <div className="view-image-heading-container">
-              <img src={EyeIcon} alt ="error"></img>
+              <img src={EyeIcon} alt="error"></img>
               <h5>{views}</h5>
             </div>
           ) : (
@@ -29,14 +28,17 @@ const PropertyAndCleanerCard = ({
           )}
         </div>
         {ownerName ? (
-          <p className="para-heading" style={{ padding: "0px 15px", marginTop: "-0px" }}>
+          <p
+            className="para-heading"
+            style={{ padding: "0px 15px", marginTop: "-0px" }}
+          >
             Owner:{ownerName}
           </p>
         ) : (
           <div></div>
         )}
         <div className="propertyname-container-heading">
-          <p >{detail}</p>
+          <p>{detail}</p>
         </div>
       </div>
     </div>

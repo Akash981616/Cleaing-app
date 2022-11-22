@@ -5,7 +5,14 @@ import userDeleteIcon from "../assets/userDeleteIcon.svg";
 import DownloadIcon from "../assets/DownloadIcon.svg";
 import userEditIcon from "../assets/userEditIcon.svg";
 import Rating from "@mui/material/Rating";
+import { useStateContext } from "../context/ContextProvider";
 const ContractList = ({ col1, col2, col3, col4, col5, header }) => {
+  const {
+    openModal,
+    setopenModal,
+    IsShareInspectionModal,
+    SetIsShareInspectionModal,
+  } = useStateContext();
   return (
     <div className={header ? "list-container" : "list-container-list"}>
       <div className="list-name-container">
@@ -65,14 +72,22 @@ const ContractList = ({ col1, col2, col3, col4, col5, header }) => {
               <img src={DownloadIcon} alt="error"></img>
             </div>
 
-            <div className="userPage-curd-operation-div">
+            <div
+              className="userPage-curd-operation-div"
+              onClick={() => SetIsShareInspectionModal(true)}
+            >
               <img src={ShareIcon} alt="error"></img>
             </div>
             <div className="userPage-curd-operation-div">
               <img src={userEditIcon} alt="error"></img>
             </div>
 
-            <div className="userPage-curd-operation-div-white">
+            <div
+              className="userPage-curd-operation-div-white"
+              onClick={() => {
+                setopenModal(true);
+              }}
+            >
               <img src={userDeleteIcon} alt="error"></img>
             </div>
           </div>

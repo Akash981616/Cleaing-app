@@ -189,6 +189,60 @@ const ContractTemplate = () => {
         </div>
       </Accordion>
       <FadeButtonGrop />
+      <Accordion
+        style={{
+          background: "#f9f9f9",
+          borderRadius: "5px",
+          border: "1px",
+          borderColor: "#e2e2e2",
+          marginTop: "40px",
+          padding: "0px 20px 0px 20px",
+        }}
+      >
+        <AccordionSummary
+          expandIcon={<AddIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <h1
+            className="accordin-header"
+            style={{
+              background: "#f9f9f9",
+              borderRadius: "5px",
+              border: "1px",
+              borderColor: "#e2e2e2",
+            }}
+          >
+            Add an additional Information
+          </h1>
+        </AccordionSummary>
+        <div className="accordin-details-container">
+          <Checkbox
+            style={{ color: "grey" }}
+            inputProps={{
+              "aria-label": "Checkbox A",
+            }}
+          />
+          <label>Strict Cancelllation Policy</label>
+        </div>
+        <div className="accordin-details-container">
+          <Checkbox
+            style={{ color: "grey" }}
+            inputProps={{
+              "aria-label": "Checkbox A",
+            }}
+          />
+          <label>Custom cancellation policy</label>
+        </div>
+        <div className="accordin-third-container">
+          <label>
+            Guest receive a full refund for cancellations made within 48 hours
+            of booking, if the check-in date is at least 14 days away. 50%
+            refund for cancellations made at least 7 days before check-in. No
+            refunds for cancellations made within 7 days of check-in
+          </label>
+        </div>
+      </Accordion>
     </>
   );
 };

@@ -8,6 +8,9 @@ const FunctionBar = ({
   createProfile,
   SetUserPageFormState,
   userPageFormState,
+ 
+  SetopenCreateInpectionForm,
+  setSelectOption,
 }) => {
   return (
     <div className="userpage-top-conatiner-utility">
@@ -25,7 +28,11 @@ const FunctionBar = ({
           <button
             className="create-user-button"
             onClick={() => {
-              SetUserPageFormState(`${createProfile}`);
+              {
+                SetopenCreateInpectionForm
+                  ? SetopenCreateInpectionForm(true)
+                  : SetUserPageFormState(`${createProfile}`);
+              }
             }}
           >
             <img src={plusCircleICon} alt="error"></img>

@@ -30,7 +30,7 @@ button:hover {
   color: #ffffff;
 }
 .model-btn {
-  :hover{
+  :hover {
     cursor: pointer;
   }
   display: flex;
@@ -58,4 +58,80 @@ button:hover {
   background: #8a8a8a;
   border-radius: 4px;
   color: #ffffff;
+}
+.share-model-main-container {
+  :hover {
+    cursor: pointer;
+  } 
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    color: #000000;
+  }
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #929292;
+  }
+  button {
+    align-self: flex-end;
+    margin-top: 60px;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    width: 132px;
+    height: 48px;
+    left: 878px;
+    top: 732px;
+
+    background: #8a8a8a;
+    border-radius: 4px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e9e9e9;
+    background: #8a8a8a;
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  
+  input {
+    width: 559px;
+    height: 48px;
+    padding: 5px 20px;
+    font-family: "Poppins";
+    font-style: normal;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 9px;
+    color: #929292;
+  }
+  textarea {
+    padding: 10px 10px;
+    width: 578px;
+    height: 79px;
+    font-size: 14px;
+    font-family: "Poppins";
+    font-style: normal;
+    color: #929292;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 9px;
+  }
+  input:focus {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #929292;
+  }
 }

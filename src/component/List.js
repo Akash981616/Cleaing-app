@@ -3,6 +3,7 @@ import "./List.scss";
 import userEditIcon from "../assets/userEditIcon.svg";
 import userDeleteIcon from "../assets/userDeleteIcon.svg";
 import EyeAction from "../assets/EyeAction.svg";
+import { useStateContext } from "../context/ContextProvider";
 
 const List = ({
   name,
@@ -13,9 +14,9 @@ const List = ({
   city,
   header,
   editIcon,
-  setOpen,
   SetViewReportTooggle,
 }) => {
+  const { openModal, setopenModal } = useStateContext();
   return (
     <div className={header ? "list-container" : "list-container-list"}>
       <div className="list-name-container">
@@ -78,7 +79,7 @@ const List = ({
 
             <div
               className="userPage-curd-operation-div-white"
-              onClick={() => setOpen(true)}
+              onClick={() => setopenModal(true)}
             >
               <img src={userDeleteIcon} alt="error"></img>
             </div>

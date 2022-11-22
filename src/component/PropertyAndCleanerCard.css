@@ -1,10 +1,6 @@
 .property-img-card-container img {
-  padding: 0;
-  margin-top: -2px;
-  margin-left: -2px;
-  object-fit: cover;
-
-  width: 400px;
+  margin-left: -1.5px;
+  width: 375px;
   height: 190px;
   background: #ffffff;
   border-radius: 11px;
@@ -12,7 +8,6 @@
 .property-img-card-container {
   width: auto;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 .scroll-container {
@@ -25,7 +20,7 @@
 .property-card-container {
   display: flex;
   align-items: center;
-  width: 396px;
+  width: 371.5px;
   height: 320px;
   border: 1.5px dashed #c9c17f;
   border-radius: 11px;

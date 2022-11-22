@@ -5,6 +5,7 @@ import userDeleteIcon from "../assets/userDeleteIcon.svg";
 import EyeAction from "../assets/EyeAction.svg";
 import DeleteModel from "../model/Model";
 import Model from "../model/Model";
+import { useStateContext } from "../context/ContextProvider";
 const OnwerList = ({
   name,
   phoneno,
@@ -19,6 +20,7 @@ const OnwerList = ({
   status,
   deleteFunction,
 }) => {
+   const { openModal, setopenModal } = useStateContext();
   return (
     <div className={header ? "list-container" : "list-container-list"}>
       <div className="list-name-container">
@@ -82,7 +84,7 @@ const OnwerList = ({
 
             <div
               className="userPage-curd-operation-div-white"
-              onClick={() => {Model()}}
+              onClick={() => {setopenModal(true)}}
             >
               <img src={userDeleteIcon} alt="error"></img>
             </div>

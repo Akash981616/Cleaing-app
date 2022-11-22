@@ -3,7 +3,7 @@ import "./Model.scss";
 import ModelDeleteIcon from "../assets/ModelDeleteIcon.svg";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-
+import InputBar from "../component/InputBar";
 const style = {
   position: "absolute",
   top: "50%",
@@ -11,8 +11,8 @@ const style = {
   transform: "translate(-50%, -50%)",
   width: 400,
   p: 4,
-  width: "512px",
-  height: "382px",
+  width: " 666px",
+  height: "562px",
   background: "#ffffff",
   borderRadius: "22px",
   display: "flex",
@@ -21,8 +21,8 @@ const style = {
   flexDirection: "column",
   border: "none",
 };
-
-const Model = ({ open, handleClose }) => {
+const ShareInspectionModal = ({ open, handleClose }) => {
+  console.log(open);
   return (
     <>
       <Modal
@@ -32,22 +32,16 @@ const Model = ({ open, handleClose }) => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <div className="model-main-container">
-            <img src={ModelDeleteIcon} alt="error"></img>
-            <h2>Are You Sure</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div className="model-btn">
-            <button
-              className="grey-btn"
-              onClick={() => handleClose((prevState) => !prevState)}
-            >
-              Yes
-            </button>
-            <button onClick={() => handleClose(false)}>Cancel</button>
+          <div className="share-model-main-container">
+            <h2>Share Inspection</h2>
+            <p>User Type</p>
+            <input type="text" placeholder="Owner" />
+            <p>User Name</p>
+            <input type="text" placeholder="Owner Name" />
+            <p>User Type</p>
+            <textarea placeholder="Add Some Detail here ..."></textarea>
+
+            <button onClick={() => handleClose(false)}>Send</button>
           </div>
         </Box>
       </Modal>
@@ -55,4 +49,4 @@ const Model = ({ open, handleClose }) => {
   );
 };
 
-export default Model;
+export default ShareInspectionModal;

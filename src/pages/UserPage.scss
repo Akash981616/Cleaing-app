@@ -6,6 +6,15 @@
 .userpage-list-container::-webkit-scrollbar {
   display: none;
 }
+.report-scroll-container{
+  
+   overflow: auto;
+  height: 35rem;
+  margin-top: 15px;
+}
+.report-scroll-container::-webkit-scrollbar {
+  display: none;
+}
 .seprator {
   height: 0.1px;
   border: 0.1px solid #ebebeb;

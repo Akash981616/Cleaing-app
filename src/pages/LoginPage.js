@@ -48,7 +48,7 @@ const LoginPage = () => {
         <div className="button-container">
           <button
             onClick={(e) => {
-              router("/admin-dashboard");
+              router("home/dashboard");
             }}
           >
             Sign In &#8594;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import "./AdminDashBoard.css";
+import "./AdminDashBoard.scss";
 import SideBarNav from "../component/SideBarNav";
 import { cdata } from "../data/PropertyCardData.js";
 import PropertyAndCleanerCard from "../component/PropertyAndCleanerCard";
@@ -18,7 +18,7 @@ import {
   PointElement,
   Filler,
 } from "chart.js";
-import TopNavBar from "../component/TopNavBar";
+
 import { topCleaner } from "../data/TopCleaner.js";
 import { topProperty } from "../data/TopCleaner.js";
 ChartJS.register(
@@ -95,7 +95,7 @@ const DashBoard = () => {
         <div className="graph-container">
           <Line data={data} options={options} height={"69px"} />
         </div>
-        <h2 style={{ fontFamily: "'Poppins" }}>Top Property</h2>
+        <h2 style={{ fontFamily: "'Poppins"}}>Top Property</h2>
         <div className="property-img-card-container">
           {topProperty.map((e) => {
             return (

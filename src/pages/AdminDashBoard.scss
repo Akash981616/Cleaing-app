@@ -9,9 +9,9 @@
 
 .main-dashBoard-container {
   width: 74%;
-  padding: 7px 45px ;
+  padding: 7px 45px;
   background: #ffffff;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   border-radius: 36px;
   height: 94.3%;
 }
@@ -46,6 +46,7 @@
   font-size: 15px;
 }
 .PropertyDetailCard-container {
+  box-sizing: border-box;
   width: auto;
   display: flex;
   flex-direction: row;
@@ -74,4 +75,17 @@
 .top-navbar-iocn-container img {
   width: 25px;
   height: 25px;
+}
+.horizontal-scroll-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: auto;
+  white-space: nowrap;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 41px;
+}
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
 }

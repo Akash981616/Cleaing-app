@@ -1,22 +1,57 @@
 import React, { useEffect, useState } from "react";
-import DashBoard from "./DashBoard";
-import UserPage from "./UserPage";
-import "./AdminDashBoard.css";
+import "./AdminDashBoard.scss";
 import SideBarNav from "../component/SideBarNav";
-import ContractPage from "./ContractPage";
-import InpectionPage from "./InpectionPage";
-import PropertyPage from "./PropertyPage.js";
-import ReportPage from "./ReportPage";
 import TopNavBar from "../component/TopNavBar";
 import Model from "../model/Model";
+import { useStateContext } from "../context/ContextProvider";
+import {
+  Outlet,
+  useLocation,
+  
+} from "react-router-dom";
+import ShareInspectionModal from "../model/ShareInspectionModal";
 
 const AdminDashBoard = () => {
+  const GetCurrentAppState = () => {
+    let { pathname } = useLocation();
+
+    switch (pathname) {
+      case pathname == "/home/user":
+        return "Users";
+        break;
+      case pathname == "dashboard":
+        return "DashBoard";
+        break;
+      case pathname == "property-page":
+        return "Property";
+        break;
+      case pathname == "contract-page":
+        return "Contracts";
+        break;
+      case pathname == "inpection-page":
+        return "Inspectionform";
+        break;
+      case pathname == "report-page":
+        return "Reports";
+        break;
+      default:
+        return "DashBoard";
+        break;
+    }
+  };
+
+  const {
+    openModal,
+    setopenModal,
+    IsShareInspectionModal,
+    SetIsShareInspectionModal,
+  } = useStateContext();
   const [isModelOpen, SetIsModelOpen] = useState(false);
-  const [currAppState, setCurrAppState] = useState("Users");
+  const [currAppState, setCurrAppState] = useState("DashBoard");
+  useEffect(() => {}, []);
+
   return (
-    <div
-      className="dashboard-container"
-    >
+    <div className="dashboard-container">
       <SideBarNav
         currAppState={currAppState}
         setCurrAppState={setCurrAppState}
@@ -30,20 +65,12 @@ const AdminDashBoard = () => {
         <div>
           <TopNavBar currAppState={currAppState} />
         </div>
-        {/* <DashBoard/> */}
-        {currAppState === "DashBoard" ? (
-          <DashBoard />
-        ) : currAppState === "Users" ? (
-          <UserPage />
-        ) : currAppState === "Property" ? (
-          <PropertyPage />
-        ) : currAppState === "Contracts" ? (
-          <ContractPage />
-        ) : currAppState == "Inspectionform" ? (
-          <InpectionPage />
-        ) : (
-          <ReportPage />
-        )}
+        <Outlet />
+        <Model open={openModal} handleClose={setopenModal} />
+        <ShareInspectionModal
+          open={IsShareInspectionModal}
+          handleClose={SetIsShareInspectionModal}
+        />
       </div>
     </div>
   );
